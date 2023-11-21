@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      php: 8.1
+    commands:
+      - composer install --optimize-autoloader
+
+  build:
+    commands:
+      - php artisan optimize
+
+  post_build:
+    commands:
+      - echo Build completed
+
+artifacts:
+  files:
+    - public/
+    - vendor/

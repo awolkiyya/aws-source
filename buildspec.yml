@@ -17,5 +17,6 @@ phases:
 
 artifacts:
   files:
-    - public/
-    - vendor/
+    - public/**/*
+    - vendor/**/*
+  base-directory: .

@@ -6,11 +6,11 @@ files:
     destination: /var/www/html/
 hooks:
   BeforeInstall:
-    - location: devops/hooks/BeforeInstall.sh
+    - location: devops/hooks/BeforeInstallScript.sh
       timeout: 300
       runas: root
   AfterInstall:
-    - location: devops/hooks/AfterInstall.sh
+    - location: devops/hooks/AfterInstallScript.sh
       timeout: 300
       runas: root
   ApplicationStart:
